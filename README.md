@@ -48,7 +48,7 @@ According to the internship report:
 - 1,234 images were used for droplet training and validation (complete dataset available at the time)  
 - 500 images were annotated for bacteria detection and used for bacteria training and validation (complete dataset available at the time)  
 - Annotations were performed with Roboflow  
-- Multi-view annotation improved the visibility of low-contrast bacteria  
+- Multi-view annotation improved the visibility of bacteria under limited contrast conditions
 
 ### 3.3 Model Training (YOLO)
 Two YOLO-based detectors were trained:
@@ -59,7 +59,10 @@ Two YOLO-based detectors were trained:
 Performance metrics (from the internship report):  
 Precision of 0.90 for the bacteria class and 0.97 for the droplet class, with a global mAP50 of 0.956.
 
-### 3.4 Pipeline Integration
+### 3.4 Pipeline Overview
+![Pipeline Diagram](pipeline_diagram.jpg)
+
+### 3.5 Pipeline Integration
 A unified pipeline was implemented with the following capabilities:
 
 - Droplet detection only  
@@ -81,9 +84,14 @@ The results obtained during the internship demonstrate:
 - Consistent detection of bacteria despite limited visibility conditions  
 - Stable model convergence documented in the report (loss curves, PR curves, confusion matrices)  
 - A functional real-time prototype, ready for further testing on hardware-equipped setups  
-- The dataset allowed reliable detection of bacteria outside the droplets, but bacteria inside the droplets could not be observed due to the absence of contrast in the liquid, making intra-droplet detection extra hard to annotate or train.
+- The dataset allowed reliable detection of bacteria outside the droplets, but bacteria inside the droplets could not be observed due to the absence of contrast in the liquid, making intra-droplet detection difficult to annotate or train.
 
 Limitations noted in the report include dataset size, contrast variability and the need for additional annotated data to strengthen bacteria detection robustness.
+
+### Detection Examples
+![Detection 1](result1.png)
+![Detection 2](result2.png)
+![Detection 3](result3.png)
 
 ---
 
@@ -91,12 +99,12 @@ Limitations noted in the report include dataset size, contrast variability and t
 
 This repository is documentation-oriented and does not contain source code or experimental data (confidential).  
 The structure is:
-```README.md → High-level description of the internship project
-results/ → Non-confidential results and summaries
-result1.md
-result2.md
-result3.md
-figures/ → Detection examples and pipeline diagrams
+```markdown
+README.md               → High-level description of the internship project  
+result1.png             → Droplet and bacteria detection example  
+result2.png             → Droplet and bacteria detection example  
+result3.png             → Droplet and bacteria detection example  
+pipeline_diagram.jpg    → Schematic representation of the processing pipeline 
 ```
 
 ---
