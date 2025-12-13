@@ -10,14 +10,14 @@ No confidential code, experimental data, or proprietary material is shared here.
 
 ## 1. Project Overview
 
-Microfluidic droplet-based systems allow the study of biological and chemical processes inside isolated micro-environments. As part of the IRUPP project (Iron Uptake Pathways in *Pseudomonas aeruginosa*), this internship focused on the development of an automated pipeline capable of:
+Microfluidic droplet-based systems allow the study of biological and chemical processes inside isolated micro-environments. Within the IRUPP project (Iron Uptake Pathways in *Pseudomonas aeruginosa*), this internship focused on automating the analysis of microfluidic experiments through the development of an end-to-end pipeline capable of:
 
-- Detecting microdroplets in microscopy images  
-- Identifying their bacterial content (empty, single bacterium, multiple bacteria)  
-- Providing structured outputs suitable for downstream biological analysis  
-- Operating in a prototype real-time mode
+- Automatically detecting microdroplets in microscopy images  
+- Automatically identifying their bacterial content (empty, single bacterium, multiple bacteria)  
+- Producing structured outputs suitable for downstream biological analysis with minimal human intervention  
+- Operating in a prototype real-time mode  
 
-The work integrates computer vision methods, deep learning models (YOLO), dedicated preprocessing pipelines, and data annotation workflows.
+The pipeline combines computer vision methods, deep learning models (YOLO), dedicated preprocessing stages, and data annotation workflows.
 
 ---
 
